@@ -1,9 +1,9 @@
-.center {
+.outside {
     width: 100%;
     text-align:center;
 }
 
-.center2{
+.inside{
    width: 50%;
    margin: 0 auto; 
 }
