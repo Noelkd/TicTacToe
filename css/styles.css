@@ -1,0 +1,50 @@
+
+.center {
+    width: 100%;
+    text-align:center;
+}
+
+.center2{
+   width: 50%;
+   margin: 0 auto; 
+}
+canvas {
+    display: inline;
+}
+
+.button1 {
+    cursor: pointer;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    float:left;
+    display: block;
+    width: 40%;
+    background: #000;
+    border-radius:200px;
+    color: #FFF;
+    text-align: center;
+    font: bold 3.2em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.button1:hover{
+    background-color: #ff3434;
+     box-shadow: 10px 10px 5px #888;
+}
+.button2 {
+    cursor: pointer;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    float:right;
+    display: block;
+    width: 40%;
+    background: #000;
+    border-radius:200px;
+    color: #FFF;
+    text-align: center;
+    font: bold 3.2em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.button2:hover{
+    background-color: #ff3434;
+    box-shadow: 10px 10px 5px #888;
+}

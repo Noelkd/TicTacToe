@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+    <div class="center">
+      <div class="center2">
+          <canvas id="board" width="300" height="300"></canvas>
+            
+           <div class="buttons">
+            <div class="button1" onclick="new_board.set_player('X')"> X </div>
+            <div class="button2" onclick="new_board.set_player('O')"> O </div>
+          </div>
+      </div>
+    </div>
+    <script src="js/game.js"></script>
+    <script src="js/board.js"></script>
+    <!--<script src="js/tests.js"></script> -->
+    <script>
+      var new_game = new ticTacToe("X");
+      var new_board = new board(new_game);
+    </script>
+  </body>
+</html>
+
+
