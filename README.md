@@ -1,7 +1,7 @@
 TicTacToe
 =========
 
-A implementation of the minimax algorthim in Javascript, HTML (canvas)
+An implementation of the minimax algorthim in Javascript, HTML (canvas)
 
 
 TODOS:
