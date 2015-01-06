@@ -124,8 +124,10 @@ ticTacToe.prototype.make_move = function (move) {
 
 ticTacToe.prototype.make_computer_move = function () {
     if (this.turn === this.comp) {
-        var move, score;
-        [move, score] = this.maximised_move(this.board, 0);
+        var move, score, arr;
+        arr = this.maximised_move(this.board, 0);
+        move = arr[0];
+        score = arr[1];
         //console.log(move, score);
         this.make_move(move);
     }
@@ -144,7 +146,9 @@ ticTacToe.prototype.maximised_move = function (board, depth) {
     var possible_moves = this.get_available_moves(board, this.comp);
     for (var i = 0; i < possible_moves.length; i++) {
         var new_board_state = possible_moves[i];
-        [move, score] = this.minimized_move(new_board_state, depth);
+        var arr = this.maximised_move(new_board_state, depth);
+        move = arr[0];
+        score = arr[1];
 
         if (best_score === null || score > best_score) {
             best_score = score;
@@ -168,8 +172,10 @@ ticTacToe.prototype.minimized_move = function (board, depth) {
 
     for (var i = 0; i < possible_moves.length;i++) {
         var new_board_state = possible_moves[i];
-        var move, score;
-        [move, score] = this.maximised_move(new_board_state, depth);
+        var move, score, arr;
+        arr = this.maximised_move(new_board_state, depth);
+        move = arr[0];
+        score = arr[1];
 
         if (best_score === null || score < best_score) {
             best_score = score;
